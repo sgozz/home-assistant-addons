@@ -1,0 +1,28 @@
+name: "Foundry VTT"
+description: "Foundry VTT in felddy/foundryvtt container"
+version: "1.0.0"
+slug: "foundryvtt"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+startup: services
+ports:
+  30000/tcp: 30000
+options:
+  FOUNDRY_USERNAME: ""
+  FOUNDRY_PASSWORD: ""
+  FOUNDRY_ADMIN_KEY: ""
+environment:
+  DATA_DIR: "/data"
+  CONTAINER_PRESERVE_CONFIG: "true"
+schema:
+  FOUNDRY_USERNAME: str
+  FOUNDRY_PASSWORD: password
+  FOUNDRY_ADMIN_KEY: password
+legacy: true
+webui: "http://[HOST]:[PORT:30000]/"
+

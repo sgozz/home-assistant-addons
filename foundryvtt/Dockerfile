@@ -1,0 +1,1 @@
+FROM felddy/foundryvtt:release
