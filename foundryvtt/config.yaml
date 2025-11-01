@@ -3,6 +3,7 @@ description: "Foundry VTT in felddy/foundryvtt container"
 version: "1.0.0"
 slug: "foundryvtt"
 init: false
+image: "ghcr.io/sgozz/{arch}-foundryvtt"
 arch:
   - aarch64
   - amd64
